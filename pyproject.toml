@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "qr_code_generator"
+version = "0.1.0"
+description = ""
+authors = ["jack <jack@flnpb.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+qrcode = "^7.3.1"
+Pillow = "^9.1.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
