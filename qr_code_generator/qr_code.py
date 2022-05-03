@@ -2,9 +2,8 @@
 import qrcode
 import sys, time
 
-
 def input_URL():
-	url = str(input("enter the url you need to make a qr code for (use www.name.com) : "))
+	url = str(input("enter the url you need to make a qr code for (example: use www.name.com) : "))
 	http_prefix = "https://"
 	full_url = f"{http_prefix}{url}"
 	return full_url
@@ -27,6 +26,7 @@ def generate_qr(data, img_path=".", img_filename="qr_code"):
 	# - - - display data list of qr - - -
 	print(qr.data_list)
 
+# - - - on run import  - - -
 if __name__ == "__main__":
 	url = input_URL()
 	generate_qr(url)
